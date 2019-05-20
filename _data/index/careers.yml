@@ -27,3 +27,17 @@
     detail: DevOps and Python Developer
     i18n: company_b_job
   icon: fa-plus-square
+
+- name:
+    detail: EcoNet
+    i18n: company_b
+  desc:
+    detail: I worked at EcoNet as Python Developer. Application for Drung industry, using AI and ML, Cassandra and Elasticsearch. 
+    i18n: company_b_desc
+  date:
+    detail: Oct. 2018
+    i18n: company_b_date
+  job:
+    detail: Python Developer
+    i18n: company_b_job
+  icon: fa-plus-square
