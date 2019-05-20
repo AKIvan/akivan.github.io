@@ -1,29 +1,29 @@
 # careers section data
 # if you don't have language feature(language.yml is empty), ignore "i18n" items
 - name:
-    detail: Company A
+    detail: Symphony-Solutions
     i18n: company_a
   desc:
-    detail: I worked at Company A ...
+    detail: I worked at Symphony-Solutions as Python Developer
     i18n: company_a_desc
   date:
-    detail: Apr. 2016
+    detail: Nov. 2017
     i18n: company_a_date
   job:
-    detail: CTO
+    detail: Python Developer
     i18n: company_a_job
   icon: fa-plus-square
 
 - name:
-    detail: Company B
+    detail: Armedia
     i18n: company_b
   desc:
-    detail: I worked at Company B ...
+    detail: I worked at Armedia as DevOps
     i18n: company_b_desc
   date:
-    detail: Jun. 2015
+    detail: Apr. 2016
     i18n: company_b_date
   job:
-    detail: Full Stack Developer
+    detail: DevOps and Python Developer
     i18n: company_b_job
   icon: fa-plus-square
