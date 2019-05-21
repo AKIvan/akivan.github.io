@@ -4,7 +4,7 @@
     detail: Symphony-Solutions
     i18n: company_a
   desc:
-    detail: I worked at Symphony-Solutions as Python Developer
+    detail: I worked at Symphony-Solutions as Python Developer and DevOps.
     i18n: company_a_desc
   date:
     detail: Nov. 2017
@@ -36,6 +36,62 @@
     i18n: company_b_desc
   date:
     detail: Oct. 2018
+    i18n: company_b_date
+  job:
+    detail: Python Developer
+    i18n: company_b_job
+  icon: fa-plus-square
+
+- name:
+    detail: Radix-Technologies
+    i18n: company_b
+  desc:
+    detail: I worked at Radix-Technologies as Cloud Architect. Designing maintaining Clouds/Grids (OpenStack, CA Applogic, Vmware, Hyper-V). 
+    i18n: company_b_desc
+  date:
+    detail: Oct. 2012
+    i18n: company_b_date
+  job:
+    detail: Python Developer
+    i18n: company_b_job
+  icon: fa-plus-square
+
+- name:
+    detail: NewMan's Business Accelerator
+    i18n: company_b
+  desc:
+    detail: Mentor for Cloud and Virtualization, Unix and Linux Security, Cisco, Computer Forensics, Critical Security Controls - Planning, Implementing and Auditing
+    i18n: company_b_desc
+  date:
+    detail: Oct. 2012
+    i18n: company_b_date
+  job:
+    detail: Python Developer
+    i18n: company_b_job
+  icon: fa-plus-square
+
+- name:
+    detail: Makpetrol A.D. - Skopje
+    i18n: company_b
+  desc:
+    detail: I worked as System and Network Administrator. Implementing ISO 27001, Managing whole infrastructure and monitoring the same.
+    i18n: company_b_desc
+  date:
+    detail: Oct. 2010
+    i18n: company_b_date
+  job:
+    detail: Python Developer
+    i18n: company_b_job
+  icon: fa-plus-square
+
+- name:
+    detail: EOS Matrix
+    i18n: company_b
+  desc:
+    detail: I worked at EOS Matrix as System and Network Administrator.
+    i18n: company_b_desc
+  date:
+    detail: Oct. 2010
     i18n: company_b_date
   job:
     detail: Python Developer
