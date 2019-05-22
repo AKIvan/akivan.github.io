@@ -2,5 +2,5 @@
 
 label: Ability
 id : cs
-aspects: Python, AI, Machine Learning, DevOps, Cloud, Python, OpenCV
-percentage: 100, 65, 60, 85, 80, 90, 60
+aspects: Python, AI, Machine Learning, DevOps, Cloud, OpenCV, AWS
+percentage: 100, 75, 75, 90, 80, 60, 85
