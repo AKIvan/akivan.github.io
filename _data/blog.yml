@@ -9,14 +9,14 @@
 - name: Linux
   href: /linux/
 
-- name: HTML
-  href: /html/
+- name: AI
+  href: /ai/
 
-- name: Database
-  href: /database/
+- name: ML
+  href: /ml/
 
-- name: Mac
-  href: /mac/
+- name: DevOps
+  href: /devops/
 
 - name: Life
   href: /life/
