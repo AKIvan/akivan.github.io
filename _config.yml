@@ -68,7 +68,7 @@ kramdown:
   input: GFM
   syntax_highlighter: rouge
 
-# plugins:
-#   - jekyll-gist
+# # plugins:
+# #   - jekyll-gist
 
-plugins: ['jekyll-twitter-plugin']
+# plugins: ['jekyll-twitter-plugin']
