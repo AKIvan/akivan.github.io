@@ -74,6 +74,3 @@ kramdown:
 # plugins: ['jekyll-twitter-plugin']
 
 
-# collections:
-#   devops:
-#     output: true

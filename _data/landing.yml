@@ -36,11 +36,3 @@
   name: Links
   tpl: links.html
   css: contact
-
-
-- id: devops
-  i18n: nav.devops
-  name: DevOps
-  tpl: devops.html
-  page: devops/
-  css: testimonials navy-section
