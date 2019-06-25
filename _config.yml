@@ -72,3 +72,8 @@ kramdown:
 # #   - jekyll-gist
 
 # plugins: ['jekyll-twitter-plugin']
+
+
+collections:
+  devops:
+    output: true
