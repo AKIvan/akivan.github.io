@@ -17,7 +17,8 @@ permalink: /devops/
             
 
             <!-- latest 10 blog -->
-			{% for post in site.posts limit:10 %}
+            {% for post in site.posts limit:10 %}
+            {% if post.title == 'DevOps' %}
             <div class="vote-item">
                 <div class="row">
                     <div class="col-md-10">
@@ -41,6 +42,7 @@ permalink: /devops/
                     </div>
                 </div>
             </div>
+            {% endif %}
             {% endfor %}
         </div>
     </div>

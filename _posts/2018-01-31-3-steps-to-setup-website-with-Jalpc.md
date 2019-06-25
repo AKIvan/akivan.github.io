@@ -1,13 +1,12 @@
 ---
 layout: post
-title:  "DevOps Ljupco"
+title:  "DevOps"
 date:   2017-01-31
 desc: "DevOps Ljupco"
 keywords: "Jalpc,Jekyll,gh-pages,website,blog,easy"
 categories: [HTML]
 tags: [Jalpc,Jekyll]
 icon: icon-html
-permalink: devops
 ---
 
 Everyone wants to have a personal website, you can display your infomation to public, post blogs and make friends. If you are CS engineer, haveing a self website will benefit your interview.
