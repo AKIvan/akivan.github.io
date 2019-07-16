@@ -5,7 +5,7 @@
 #- src: landing/header_one.jpg
 #  title: first banner image
 
-- src: landing/AI14.jpg
+- src: landing/AI16.jpg
   title: first banner image
 
 
@@ -13,5 +13,5 @@
   title: second banner image
 
 
-- src: landing/AI16.jpg
+- src: landing/AI14.jpg
   title: third banner image
