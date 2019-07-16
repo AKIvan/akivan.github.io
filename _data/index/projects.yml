@@ -10,10 +10,10 @@
 
 - name: EMBRO
   i18n: cpython
-  gh_user: python
-  repo: cpython
+  # gh_user: python
+  # repo: cpython
   img: /static/assets/img/landing/AI07.png
-  desc: Using Artificial Intellegence to detect and predict success in IVF.
+  desc: Using Artificial Intellegence to detect and predict success In Vitro Fertilization (IVF).
 
 - name: Python
   i18n: cpython
