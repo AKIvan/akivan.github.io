@@ -12,7 +12,7 @@
   i18n: cpython
   # gh_user: python
   # repo: cpython
-  img: /static/assets/img/landing/AI07.png
+  img: /static/assets/img/landing/AI13.png
   desc: Using Artificial Intellegence to detect and predict success In Vitro Fertilization (IVF).
 
 - name: Python
