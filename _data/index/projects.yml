@@ -8,6 +8,13 @@
 #   img: /static/assets/img/landing/jekyll.png
 #   desc: This project is my project. I use javescript to get repo's information all my repos have only one request.
 
+- name: EMBRO
+  i18n: cpython
+  gh_user: python
+  repo: cpython
+  img: /static/assets/img/landing/AI07.png
+  desc: Using Artificial Intellegence to detect and predict success in IVF.
+
 - name: Python
   i18n: cpython
   gh_user: python
@@ -15,11 +22,11 @@
   img: /static/assets/img/landing/python.png
   desc: This project is other's project. I use another request to get repo's information.
 
-- name: Google
-  i18n: google
-  url: https://google.com
-  img: /static/assets/img/landing/google.png
-  desc: This is another project.
+# - name: Google
+#   i18n: google
+#   url: https://google.com
+#   img: /static/assets/img/landing/google.png
+#   desc: This is another project.
 
 - name: ProtonMail
   i18n: google
