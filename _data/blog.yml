@@ -10,11 +10,11 @@
 - name: Python
   href: /python/
 
-- name: Linux
-  href: /linux/
-
 - name: DevOps
   href: /devops/
+
+- name: Linux
+  href: /linux/
 
 - name: Life
   href: /life/
