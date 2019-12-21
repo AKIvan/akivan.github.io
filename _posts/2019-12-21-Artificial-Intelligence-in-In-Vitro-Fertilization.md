@@ -4,7 +4,7 @@ title:  "Artificial Intelligence in In Vitro Fertilization"
 date:   2019-12-20
 desc: "How AI find its way to IVF"
 keywords: "AI, Artificial Intelligence, IVF, In Vitro Fertilization"
-categories: [HTML,ai]
+categories: [HTML,AI]
 tags: [AI, Artificial Intelligence, IVF, In Vitro Fertilization]
 icon: icon-html
 ---
