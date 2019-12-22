@@ -24,7 +24,9 @@ EMBRY can detect mature eggs, detect how old are the embrios, and currently we a
 <center>
 <img src="/static/assets/img/blog/ai/embry/day3.png" width="500" height="500" />
 <figcaption>Embrion 3th day</figcaption>
+</center>
 
+<center>
 <img src="/static/assets/img/blog/ai/embry/day5.png" width="500" height="500" />
 <figcaption>Embrion 5th day</figcaption>
 </center>
