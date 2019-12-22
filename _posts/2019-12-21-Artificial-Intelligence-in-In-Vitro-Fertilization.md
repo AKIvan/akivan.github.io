@@ -19,20 +19,22 @@ I was trying to prove my wife that I can detect mature eggs by using AI methods 
 EMBRY is an application that follows the whole IVF Process and predicts the outcome. Embryologist take information from the patients in EMBRY like: 
 Age, Cause of infertility, IVF attempts, successful attempts, number of eggs and embrios and the quality of it. On the other hand using the camera from the microscope, we develop another option for detection. 
 
-EMBRY can detect mature eggs, detect how old are the embrios, and currently we are working on detecting the quality. As I mentioned above, all this information is written and taken in calculation. The prediction is the outcome of the calculation, based on the information from the patients. 
-<div class="row">
-  <div class="column">
-    <img src="/static/assets/img/blog/ai/embry/day3.png" width="500" height="500" />
-</div>
-<div class="column">
-<img src="/static/assets/img/blog/ai/embry/day5.png" width="500" height="500"/>
-<figcaption>Detection of the day on Embrios</figcaption>
-</div>
-</div>
 
+<center>
+<img src="/static/assets/img/blog/ai/embry/mature_egg.png" width="600" height="550" />
+<figcaption>We start with detection of mature eggs (The first picture)</figcaption>
+</center>
+
+EMBRY can detect mature eggs, detect how old are the embrios, and currently we are working on detecting the quality. As I mentioned above, all this information is written and taken in calculation. The prediction is the outcome of the calculation, based on the information from the patients. 
+
+<center>
+<img src="/static/assets/img/blog/ai/embry/day3.png" width="600" height="550" /><img src="/static/assets/img/blog/ai/embry/day5.png" width="600" height="550"/>
+<figcaption>Detection of the day on Embrios</figcaption>
+</center>
 
 
 With this kind of method and technology, we increase the success rate of IVF, the speed, and Embriologyist are more accurate in choosing.
 Also we save money that the goverment is giving for the first tree attempts and money that the patient is giving ... 
 As I mentioned above, the next phases are detection of morphology, getting details, and suming the quality of the eggs and embrios, which can later be applied to the sperm.
+
 
