@@ -8,9 +8,9 @@ categories: [HTML,Ai]
 tags: [AI, Artificial Intelligence, IVF, In Vitro Fertilization]
 icon: icon-html
 ---
-
-<img src="/static/assets/img/blog/ai/embry/ai-ivf-09.png" align="center" />
-
+<center>
+<img src="/static/assets/img/blog/ai/embry/ai-ivf-09.png"  />
+</center>
 In vitro fertilisation is a process of fertilisation where an egg is combined with sperm outside the body, in vitro. The process involves monitoring and stimulating a woman's ovulatory process, removing an ovum or ova from the woman's ovaries and letting sperm fertilise them in a liquid, in a laboratory.
 
 How it starts:
