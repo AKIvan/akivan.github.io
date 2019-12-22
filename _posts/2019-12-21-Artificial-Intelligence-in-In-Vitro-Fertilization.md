@@ -20,11 +20,16 @@ EMBRY is an application that follows the whole IVF Process and predicts the outc
 Age, Cause of infertility, IVF attempts, successful attempts, number of eggs and embrios and the quality of it. On the other hand using the camera from the microscope, we develop another option for detection. 
 
 EMBRY can detect mature eggs, detect how old are the embrios, and currently we are working on detecting the quality. As I mentioned above, all this information is written and taken in calculation. The prediction is the outcome of the calculation, based on the information from the patients. 
+<div class="row">
+  <div class="column">
+    <img src="/static/assets/img/blog/ai/embry/day3.png" width="500" height="500" />
+</div>
+<div class="column">
+<img src="/static/assets/img/blog/ai/embry/day5.png" width="500" height="500"/>
+<figcaption>Detection of the day on Embrios</figcaption>
+</div>
+</div>
 
-<center>
-<img src="/static/assets/img/blog/ai/embry/day3.png" width="500" height="500" /> <img src="/static/assets/img/blog/ai/embry/day5.png" width="500" height="500" />
-<figcaption>Embrion 3th day</figcaption>
-</center>
 
 
 With this kind of method and technology, we increase the success rate of IVF, the speed, and Embriologyist are more accurate in choosing.
