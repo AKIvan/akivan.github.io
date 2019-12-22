@@ -22,8 +22,8 @@ Age, Cause of infertility, IVF attempts, successful attempts, number of eggs and
 EMBRY can detect mature eggs, detect how old are the embrios, and currently we are working on detecting the quality. As I mentioned above, all this information is written and taken in calculation. The prediction is the outcome of the calculation, based on the information from the patients. 
 
 <center>
-Day3 Embrion
-<img src="/static/assets/img/blog/ai/embry/day3.png" />
+<img src="/static/assets/img/blog/ai/embry/day3.png" width="200" height="200" />
+<figcaption>Embrion 3th day</figcaption>
 </center>
 
 With this kind of method and technology, we increase the success rate of IVF, the speed, and Embriologyist are more accurate in choosing.
