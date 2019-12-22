@@ -9,12 +9,11 @@
 #   desc: This project is my project. I use javescript to get repo's information all my repos have only one request.
 
 - name: EMBRY
-  i18n: cpython
-  # gh_user: python
-  # repo: cpython
+  i18n: google
   url: https://akivan.com/html/ai/2019/12/20/Artificial-Intelligence-in-In-Vitro-Fertilization.html
   img: /static/assets/img/landing/ai-ivf-09.png
   desc: Using Artificial Intellegence to detect and predict success In Vitro Fertilization (IVF).
+
 
 - name: Python
   i18n: cpython
