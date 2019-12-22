@@ -44,6 +44,6 @@ The whole application is writen in Python and Django as framework. The hospital/
  
  
 <center>
-<img src="/static/assets/img/blog/ai/embry/overview.png" width="600" height="550" /><img src="/static/assets/img/blog/ai/embry/rezults.png" width="600" height="550"/>
+<img src="/static/assets/img/blog/ai/embry/overview.png" width="800" height="450" /><img src="/static/assets/img/blog/ai/embry/rezults.png" width="500" height="650"/>
 <figcaption>Some overview of the app</figcaption>
 </center>
