@@ -16,9 +16,13 @@ icon: icon-html
 
 
 In vitro fertilisation is a process of fertilisation where an egg is combined with sperm outside the body, in vitro. The process involves monitoring and stimulating a woman's ovulatory process, removing an ovum or ova from the woman's ovaries and letting sperm fertilise them in a liquid, in a laboratory.
+<p>&nbsp;</p>
+
 
 ### How it starts:
-We start with a simple experiment, trying do detect mature eggs. Together with my wife, Mimoza Adji - Krsteva, (who is an Embryologist and a guide in IVF Procedure in this project), we spent some time (a lot), on more than 3500 images, trying to train the model. After some time we did the same for embrios, trying to detect in which day it is. Now we are working on detecting the quality and detecting some other points on the eggs and the embrios. After that we plan on doing the same for the sperm. You know how hard it can get when you work with someone who is always right 😃
+We start with a simple experiment, trying do detect mature eggs. Together with my wife, Mimoza Adji - Krsteva, (who is an Embryologist and a guide in IVF Procedure in this project), we spent some time (a lot), on more than 3500 images, trying to train the model. After some time we did the same for embrios, trying to detect in which day it is. Now we are working on detecting the quality and detecting some other points on the eggs and the embrios. After that we plan on doing the same for the sperm. You know how hard it can get when you work with someone who is always right 😃 
+<p>&nbsp;</p>
+
 
 ### What is EMBRY:
 EMBRY is an application that follows the whole IVF Process and predicts the outcome. Embryologist take information from the patients in EMBRY like: 
