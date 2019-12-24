@@ -16,10 +16,11 @@ icon: icon-html
 In vitro fertilisation is a process of fertilisation where an egg is combined with sperm outside the body, in vitro. The process involves monitoring and stimulating a woman's ovulatory process, removing an ovum or ova from the woman's ovaries and letting sperm fertilise them in a liquid, in a laboratory.
 
 How it starts:
-I was trying to prove my wife that I can detect mature eggs by using AI methods or Computer Vision, and I was so happy when I did it, because I was finally right about something at home (but don't tell her😃). So, one thing led to another, the next step was detecting how old were the embrios. So that's how EMBRY was born. 
+We start with a simple experiment, trying do detect mature eggs. Together with my wife, Mimoza Adji - Krsteva, (who is an Embryologist and a guide in IVF Procedure in this project), we spent some time (a lot), on more than 3500 images, trying to train the model. After some time we did the same for embrios, trying to detect in which day it is. Now we are working on detecting the quality and detecting some other points on the eggs and the embrios. After that we plan on doing the same for the sperm. You know how hard it can get when you work with someone who is always right 😃
+
 
 EMBRY is an application that follows the whole IVF Process and predicts the outcome. Embryologist take information from the patients in EMBRY like: 
-Age, Cause of infertility, IVF attempts, successful attempts, number of eggs and embrios and the quality of it. On the other hand using the camera from the microscope, we develop another option for detection. 
+Age, Cause of infertility, IVF attempts, successful attempts, number of eggs and embrios and the quality of it (the quality is manually entered from the Embryologist). On the other hand using the camera from the microscope, we develop another option for detection. 
 <p>&nbsp;</p>
 
 <center>
