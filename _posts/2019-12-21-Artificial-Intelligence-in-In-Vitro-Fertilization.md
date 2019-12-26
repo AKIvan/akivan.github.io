@@ -49,6 +49,7 @@ EMBRY can detect mature eggs, detect how old are the embrios, and currently we a
 One of the priorities we have is to finish the detection of the quality. With this phase we are aditionally giving the embriologists another tool so they can be faster and ease the steps they are making. As we've already done it at some points. 
 
 The other step is to make it easy for integration with other applications.
+<p>&nbsp;</p>
 
 
 ### Benefits
