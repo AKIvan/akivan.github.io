@@ -44,9 +44,18 @@ EMBRY can detect mature eggs, detect how old are the embrios, and currently we a
 </center>
 <p>&nbsp;</p>
 
+### Next Steps and features
+
+One of the priorities we have is to finish the detection of the quality. With this phase we are aditionally giving the embriologists another tool so they can be faster and ease the steps they are making. As we've already done it at some points. 
+
+The other step is to make it easy for integration with other applications.
+
+
+### Benefits
+
 With this kind of method and technology, we increase the success rate of IVF, the speed, and Embriologyist are more accurate in choosing.
 Also we save money that the goverment is giving for the first tree attempts and money that the patient is giving ... 
-As I mentioned above, the next phases are detection of morphology, getting details, and suming the quality of the eggs and embrios, which can later be applied to the sperm.
+As I mentioned above, the next phases are detection of morphology, getting details, and suming the quality of the eggs and embrios, which can later be applied to the sperm too.  
 
 The whole application is writen in Python and Django as framework. The hospital/clinics will have overview of the patients and results. No private data is stored, like Name and surenames. Just results and numbers. They can re-calculate each atempt if they need to. 
 <p>&nbsp;</p>
