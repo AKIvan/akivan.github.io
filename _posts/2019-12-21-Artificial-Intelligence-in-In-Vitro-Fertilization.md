@@ -20,13 +20,14 @@ In vitro fertilisation is a process of fertilisation where an egg is combined wi
 
 
 ### How it starts:
-We start with a simple experiment, trying do detect mature eggs. Together with my wife, Mimoza Adji - Krsteva, (who is an Embryologist and a guide in IVF Procedure in this project), we spent some time (a lot), on more than 3500 images, trying to train the model. After some time we did the same for embrios, trying to detect in which day it is. Now we are working on detecting the quality and detecting some other points on the eggs and the embrios. After that we plan on doing the same for the sperm. You know how hard it can get when you work with someone who is always right 😃 
+
+We start with a simple experiment, trying do detect mature eggs. My wife, Mimoza Adji - Krsteva, who is an embryologist and a guide in IVF Procedure in this project, and I spent some time (a lot), on more than 6500 images, trying to train the model. After some time we did the same for embrios, trying to detect in which day they are. Now we are working on detecting quality and some other points on the eggs and the embrios. After that we plan on doing the same for the sperm. You know how hard it can get when you work with someone who is always right 😃 
 <p>&nbsp;</p>
 
 
 ### What is EMBRY:
-EMBRY is an application that follows the whole IVF Process and predicts the outcome. Embryologist take information from the patients in EMBRY like: 
-Age, Cause of infertility, IVF attempts, successful attempts, number of eggs and embrios and the quality of it (the quality is manually entered from the Embryologist). On the other hand using the camera from the microscope, we develop another option for detection. 
+EMBRY is an application that follows the whole IVF Process and predicts the outcome. Embriologyist write infromation about the patients and follow the whole
+cycle. On the other hand using the camera from the microscope, we develop another option for detection.
 <p>&nbsp;</p>
 
 <center>
@@ -35,7 +36,9 @@ Age, Cause of infertility, IVF attempts, successful attempts, number of eggs and
 </center>
 <p>&nbsp;</p>
  
-EMBRY can detect mature eggs, detect how old are the embrios, and currently we are working on detecting the quality. As I mentioned above, all this information is written and taken in calculation. The prediction is the outcome of the calculation, based on the information from the patients. 
+EMBRY can detect mature eggs, detect how old are the embrios, and currently we are working on detecting the quality of embrios, which currently is writen manually by the embriologists. 
+As I mentioned above, all this information is written and taken in calculation. 
+The prediction is the outcome of the calculation, based on the information from the patients in percentages. 
 <p>&nbsp;</p> 
  
 <center>
