@@ -12,10 +12,10 @@ icon: icon-html
 <img src="/static/assets/img/blog/ai/embry/ai-ivf-09.png"  />
 </center>
 <p>&nbsp;</p>
+EMBRY is an application that follows the whole IVF Process and predicts the outcome.
 
 
-
-In vitro fertilisation is a process of fertilisation where an egg is combined with sperm outside the body, in vitro. The process involves monitoring and stimulating a woman's ovulatory process, removing an ovum or ova from the woman's ovaries and letting sperm fertilise them in a liquid, in a laboratory.
+In vitro fertilisation is a process of fertilisation where an egg is combined with sperm outside the body, in vitro. The process involves monitoring and stimulating womans ovary and removing oocyte and letting sperm fertilize them in a liquid, in a laboratory.
 <p>&nbsp;</p>
 As we all know AI helps a lot in different fields, especially in medicine. So this is just another field where we try to implement this AI concept and be of help to embriologists as another technology that they can use in order to increase the success rate in IVF.
 <p>&nbsp;</p>
@@ -28,22 +28,24 @@ We start with a simple experiment, trying do detect mature eggs. Together with m
 
 
 ### What is EMBRY:
-EMBRY is an application that follows the whole IVF Process and predicts the outcome. Embriologists write information about the patients and follow the whole cycle. Based on the information and patient history data we can calculate the outcome. On the other hand using the camera from the microscope, we developed another tool called CEMBRY, option for detection, that can help embriologists to faster detect the quality and any anomaly if they have.
+EMBRY is an application that follows the whole IVF Process and predicts the outcome using AI concept. Embriologists write information about the patients and follow the whole cycle. Based on the information and patient history data we can calculate the outcome. On the other hand using the camera from the microscope, we developed another tool called CEMBRY, option for detection, that can help embriologists to faster detect the quality and any anomaly if they have.
 <p>&nbsp;</p>
 
 <center>
-<img src="/static/assets/img/blog/ai/embry/mature_egg.png" width="600" height="550" />
+<img src="/static/assets/img/blog/ai/embry/mature_egg.png" width="500" height="450" />
 <figcaption>We start with detection of mature eggs (The first picture)</figcaption>
 </center>
 <p>&nbsp;</p>
  
 CEMBRY can detect mature eggs, detect how old are the embrios, and currently we are finishing the process on detecting not just the quality of the embrios but other details, which currently are written manually by the embriologists.
+<p>&nbsp;</p> 
+
 As I mentioned above, all this information is written and taken in calculation.
-The prediction is the outcome of the calculation, based on the information from the patients in percentages. Beside the prediction part, we are opening another door for research. Hospitals, Clinics and Research centers can analyze patients data and try to find other problems for solving.
+Prediction is the outcome of the algorithm calculation, based on the information from the patients in percentages. Beside the prediction part, we are opening another door for research. Hospitals, Clinics and Research centers can analyze patients data and try to find other problems for solving.
 <p>&nbsp;</p> 
  
 <center>
-<img src="/static/assets/img/blog/ai/embry/day3.png" width="600" height="550" /><img src="/static/assets/img/blog/ai/embry/day5.png" width="600" height="550"/>
+<img src="/static/assets/img/blog/ai/embry/day3.png" width="500" height="450" /><img src="/static/assets/img/blog/ai/embry/day5.png" width="500" height="450"/>
 <figcaption>Detection of the day on Embrios</figcaption>
 </center>
 <p>&nbsp;</p>
@@ -58,10 +60,11 @@ The next phases are detection of morphology, getting details, and suming the qua
 The whole application is written in Python and Django as a framework. The hospital/clinics will have overview of the patients and results. No private data is stored, like Name and surnames, just results and numbers. Each hospital/clinic will have their own ID for each patient. They can re-calculate each attempt if they need to.
 
 
-Any IVF Hospital or clinic that wants to have or be part of this interesting research and prediction concept, can feel free to e-mail me.
+Any IVF Hospital or clinic that wants to have or be part of this interesting research and prediction concept, can feel free to e-mail me. 
+For any other details you can fallow us on [Facebook](https://www.facebook.com/EMBRY-107066837502022/) and [Slack](https://join.slack.com/t/embryworkspace/shared_invite/enQtOTA1NjYxMzQ0NTQ5LTQ1MDkxNmI4NDBjYmRmNjNiYmQ4YjAwMGI5MWRkZDhiYTAzMTg0MGJiNzcwZjg5ZGQwMDhhZDQ3YjU5ZjI5NDY). 
 <p>&nbsp;</p>
 
 <center>
-<img src="/static/assets/img/blog/ai/embry/overview.png" width="800" height="450" /><img src="/static/assets/img/blog/ai/embry/rezults.png" width="500" height="650"/>
+<img src="/static/assets/img/blog/ai/embry/overview.png" width="600" height="250" /><img src="/static/assets/img/blog/ai/embry/rezults.png" width="400" height="550"/>
 <figcaption>Some overview of the app</figcaption>
 </center>
