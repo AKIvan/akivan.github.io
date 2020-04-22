@@ -20,7 +20,7 @@ author:  # change following line to your infomation.
   facebook_username: ivan.adji.krstev  # Leave blank if you don't have now
   twitter_username: IvanAdjiKrstev  # Leave blank if you don't have now
   email: iadjikrstev@gmail.com  # Leave blank if you don't have now
-  cv: https://www.linkedin.com/in/ivanadji-krstev/ # An online CV can be printed as PDF, leave blank if you don't have now
+  cv: https://drive.google.com/open?id=1eBgqXACLRIFPYd87BmGAzgrzHI7A8bNc # An online CV can be printed as PDF, leave blank if you don't have now
   # skill icons are on avatar's left and right side. Reference urls are http://fontawesome.io/ and http://fizzed.com/oss/font-mfizz
   skill_icon1:
     - name: icon-python
