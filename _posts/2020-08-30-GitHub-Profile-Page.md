@@ -13,6 +13,10 @@ Building your network and sharing your work are probably the best ways to get yo
 
 As some of you may already know, GitHub recently added a hidden feature that lets you customize your GitHub profile page.
 
+<center>
+<img src="/static/assets/img/blog/gitprofile/gitprofile.png"  />
+</center>
+
 And here is how to do it.
 Once you log into your GitHub account, create a new repository and name it as your Username.
 Also, make it Public and check the "Initialize this repository with a README" file button. 
