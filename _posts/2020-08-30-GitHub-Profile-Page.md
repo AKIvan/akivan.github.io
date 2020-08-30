@@ -14,7 +14,7 @@ Building your network and sharing your work are probably the best ways to get yo
 As some of you may already know, GitHub recently added a hidden feature that lets you customize your GitHub profile page.
 
 <center>
-<img src="/static/assets/img/blog/gitprofile/gitprofile.png"  />
+<img src="/static/assets/img/blog/gitprofile/gitprofile.png" width="550" height="550" />
 </center>
 
 And here is how to do it.
