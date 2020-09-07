@@ -31,7 +31,7 @@ Here are the steps to do this:
 
 **Note**: Not forget to change the `CHANNEL-ID` with your channel id from YouTube.  
 
-For more details on the Actions Workflows you can check the [gautamkrishnar](https://github.com/gautamkrishnar/blog-post-workflow) GitHub.
+For more details on the Actions Workflows you can check the [gautamkrishnar](https://github.com/gautamkrishnar/blog-post-workflow) or [codeSTACKr](https://github.com/codeSTACKr/codeSTACKr) GitHub.
 
 ```yaml
 name: Latest YouTube Videos
@@ -53,4 +53,4 @@ jobs:
           feed_list: "https://www.youtube.com/feeds/videos.xml?channel_id=<CHANNEL-ID>"
 ```
 
-There are different feed list that you can add, like from "Stackoverflow" or "Medium". 
+There are different feed list that you can add, like from "Stackoverflow", "Spotify" or "Medium". 
