@@ -12,7 +12,7 @@
   job:
     detail: Python, AI, Django, TensorFlow
     i18n: company_a_job
-  icon: /static/assets/img/landing/ai-ivf-09.png
+  icon: fa-plus-square
 
 - name:
     detail: ENDAVA
