@@ -1,6 +1,20 @@
 # careers section data
 # if you don't have language feature(language.yml is empty), ignore "i18n" items
 - name:
+    detail: EMBRY
+    i18n: company_a
+  desc:
+    detail: Private AI Project - Using Artificial Intellegence to detect and predict success In Vitro Fertilization (IVF).
+    i18n: company_a_desc
+  date:
+    detail: Nov. 2019
+    i18n: company_a_date
+  job:
+    detail: Python, AI, Django, TensorFlow
+    i18n: company_a_job
+  icon: /static/assets/img/landing/ai-ivf-09.png
+
+- name:
     detail: ENDAVA
     i18n: company_a
   desc:
@@ -90,20 +104,6 @@
     i18n: company_b
   desc:
     detail: I worked as System and Network Administrator. Implementing ISO 27001, Managing whole infrastructure and monitoring the same.
-    i18n: company_b_desc
-  date:
-    detail: Oct. 2010
-    i18n: company_b_date
-  job:
-    detail: Python Developer
-    i18n: company_b_job
-  icon: fa-plus-square
-
-- name:
-    detail: EOS Matrix
-    i18n: company_b
-  desc:
-    detail: I worked at EOS Matrix as System and Network Administrator.
     i18n: company_b_desc
   date:
     detail: Oct. 2010
