@@ -19,7 +19,7 @@ _AWS CodePipeline is a fully managed continuous delivery service that helps you 
 So the first thing is S3 Bucket on each region that we desire to deploy. After the buckets are created in their respective region, I decided to use SSM Parameters to provide the Pipeline with the buckets.
 Pipeline needs 1 bucket per target region. After this we can start with the pipeline itself.
 
-###CodeBuild
+### CodeBuild
 
 _AWS CodeBuild is a fully managed build service in the cloud. CodeBuild compiles your source code, runs unit tests, and produces artifacts that are ready to deploy._
 
@@ -28,7 +28,6 @@ Prepare your environments to have S3 bucket to store the templates or source of 
 
 The buildspec.yaml is responsible for building the template and put it in S3 bucket so later one we can use those templates and create the CloudFormation Stacks. 
 The main command and stuff is happening in the build configuration section in this file.
-
 
     version: 0.2
     
@@ -54,10 +53,9 @@ The main command and stuff is happening in the build configuration section in th
 
 As you can see there is a different template export for each region and for each region there is a separate S3 bucket to store it, this can be put as one template but if you have different templates you can play it like this. 
 
+### CloudFormation
 Back to the cloudformation template
-
 From the resource perspective we will start with defining the CodeBuild service
-
 
     BuildProject:
         Type: AWS::CodeBuild::Project
@@ -101,8 +99,9 @@ From the resource perspective we will start with defining the CodeBuild service
             Modes:
               - LOCAL_CUSTOM_CACHE
 
-Then we starting with the pipeline service or CodePipeline
+### CodePipeline
 
+Then we starting with the pipeline service or CodePipeline
 
       Pipeline:
         Type: AWS::CodePipeline::Pipeline
@@ -134,7 +133,6 @@ As a first action in this stage we defined the source, GitHub. There can be diff
 Note here that we defined the output artifact that later we going to reference to. 
 The second action is the build.
 
-
           Name: Build
           Actions:
           -
@@ -153,7 +151,6 @@ The second action is the build.
               - Name: BuildOutput
 
 The main stuff here to point are InputArtifacts and OutputArtifacts. As input, we have the source from the previous action "SourceArtifiact" and as output we have already build stuff named as "BuildOutput".
-
 Step three, we have the deployment processes.
 
     - Name: Deploy
@@ -200,10 +197,8 @@ Step three, we have the deployment processes.
             TemplatePath: BuildOutput::template-export-region2.yml
           RunOrder: 1
 
-Note here that you can add another step before deployment, Create Change Set. This is very useful for testing it and to see what kind of changes are going to be deployed. You can put approval action too. 
-
+Note here that you can add another step before deployment, Create Change Set. This is very useful for testing it and to see what kind of changes are going to be deployed. You can put approval action too.
 As InputArtifacts we have the BuildOutput from the Build Action provided. Two main variables in this section is the "Region: region" and "RunOrder" (A positive integer that indicates the run order within the stage.)
-
 
       ArtifactStores: 
         -
@@ -214,7 +209,6 @@ As InputArtifacts we have the BuildOutput from the Build Action provided. Two ma
             EncryptionKey:
               Id: !Ref KMSKEYregion1
               Type: KMS
-      
         -
           Region: region2
           ArtifactStore:
@@ -225,7 +219,6 @@ As InputArtifacts we have the BuildOutput from the Build Action provided. Two ma
               Type: KMS
 
 At the end we end up with defining the artifact or the artifact store for each region (with their corresponding kms keys).
-
 This should be the end results image of the pipeline
 
 <center>
