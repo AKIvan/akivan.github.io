@@ -8,7 +8,8 @@ categories: [HTML,DevOps]
 tags: [AWS, CodePipeline, multi region, cross account]
 icon: icon-html
 ---
-## Why do we need this.
+### Why do we need this.
+
 
 There are many more use-cases where multi-account and cross-region CloudFormation stacks can be useful.
 It happens a lot when you have one pipeline but the same deployment need to be done on different region, and also to cover the concept of test and production.
@@ -19,7 +20,9 @@ _AWS CodePipeline is a fully managed continuous delivery service that helps you 
 So the first thing is S3 Bucket on each region that we desire to deploy. After the buckets are created in their respective region, I decided to use SSM Parameters to provide the Pipeline with the buckets.
 Pipeline needs 1 bucket per target region. After this we can start with the pipeline itself.
 
+
 ### CodeBuild
+
 
 _AWS CodeBuild is a fully managed build service in the cloud. CodeBuild compiles your source code, runs unit tests, and produces artifacts that are ready to deploy._
 
@@ -53,7 +56,9 @@ The main command and stuff is happening in the build configuration section in th
 
 As you can see there is a different template export for each region and for each region there is a separate S3 bucket to store it, this can be put as one template but if you have different templates you can play it like this. 
 
+
 ### CloudFormation
+
 Back to the cloudformation template
 From the resource perspective we will start with defining the CodeBuild service
 
@@ -98,6 +103,7 @@ From the resource perspective we will start with defining the CodeBuild service
             Type: LOCAL
             Modes:
               - LOCAL_CUSTOM_CACHE
+
 
 ### CodePipeline
 
