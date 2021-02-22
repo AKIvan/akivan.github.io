@@ -8,11 +8,11 @@ categories: [HTML,DevOps]
 tags: [AWS, CodePipeline, multi region, cross account]
 icon: icon-html
 ---
-# Something here to be added
+# Multi Account and cross region deployment
 
 _AWS CodePipeline is a fully managed continuous delivery service that helps you automate your release pipelines for fast and reliable application and infrastructure updates. CodePipeline automates the build, test, and deploy phases of your release process every time there is a code change, based on the release model you define. This enables you to rapidly and reliably deliver features and updates._
 
-There are many more use-cases where multi-account or cross-region CloudFormation stacks can be useful.
+There are many more use-cases where multi-account and cross-region CloudFormation stacks can be useful.
 
 It happens a lot when you have one pipeline but the same deployment need to be done on different region, and also to cover the concept of test and production. 
 
@@ -231,12 +231,12 @@ Note: There should be IAM Roles and Assume Role for the AWS Account (Tools) to h
 This should be the end results image of the pipeline
 
 <center>
-<img src="/static/assets/img/blog/awspipeline/img.png"  />
+<img src="/static/assets/img/blog/awspipeline/img.png" width="400" height="550" />
 </center>
 <p>&nbsp;</p>
 
 
 <center>
-<img src="/static/assets/img/blog/awspipeline/img_1.png"  />
+<img src="/static/assets/img/blog/awspipeline/img_1.png" width="400" height="550" />
 </center>
 <p>&nbsp;</p>
