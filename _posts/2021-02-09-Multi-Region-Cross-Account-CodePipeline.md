@@ -8,20 +8,19 @@ categories: [HTML,DevOps]
 tags: [AWS, CodePipeline, multi region, cross account]
 icon: icon-html
 ---
-# Multi Account and cross region deployment
-
-_AWS CodePipeline is a fully managed continuous delivery service that helps you automate your release pipelines for fast and reliable application and infrastructure updates. CodePipeline automates the build, test, and deploy phases of your release process every time there is a code change, based on the release model you define. This enables you to rapidly and reliably deliver features and updates._
+## Why do we need this.
 
 There are many more use-cases where multi-account and cross-region CloudFormation stacks can be useful.
+It happens a lot when you have one pipeline but the same deployment need to be done on different region, and also to cover the concept of test and production.
+This is some main steps that can help you start from some Account like (Tools) and deployment goes to Test and Production Account but on two regions or at least can help you to build similar one. 
 
-It happens a lot when you have one pipeline but the same deployment need to be done on different region, and also to cover the concept of test and production. 
-
-This is some guidance that can help you start from some Account (Tools) and deployment goes to Test and Production Account but on two regions or at least can help you to build similar one. 
+_AWS CodePipeline is a fully managed continuous delivery service that helps you automate your release pipelines for fast and reliable application and infrastructure updates. CodePipeline automates the build, test, and deploy phases of your release process every time there is a code change, based on the release model you define. This enables you to rapidly and reliably deliver features and updates._
 
 So the first thing is S3 Bucket on each region that we desire to deploy. After the buckets are created in their respective region, I decided to use SSM Parameters to provide the Pipeline with the buckets.
 Pipeline needs 1 bucket per target region. After this we can start with the pipeline itself.
 
 ###CodeBuild
+
 _AWS CodeBuild is a fully managed build service in the cloud. CodeBuild compiles your source code, runs unit tests, and produces artifacts that are ready to deploy._
 
 The most relevant attributes here are the environment variables containing each region bucket and the buildSpec path which should be placed inside the source code that the Pipeline will fetch from GitHub template and have it as ready to deploy part. 
@@ -226,7 +225,6 @@ As InputArtifacts we have the BuildOutput from the Build Action provided. Two ma
               Type: KMS
 
 At the end we end up with defining the artifact or the artifact store for each region (with their corresponding kms keys).
-Note: There should be IAM Roles and Assume Role for the AWS Account (Tools) to have access to other environments and Roles for the pipelines to execute the code. 
 
 This should be the end results image of the pipeline
 
@@ -240,3 +238,6 @@ This should be the end results image of the pipeline
 <img src="/static/assets/img/blog/awspipeline/img_1.png" width="400" height="550" />
 </center>
 <p>&nbsp;</p>
+
+
+Note: There should be IAM Roles and Assume Role for the AWS Account (Tools) to have access to other environments and Roles for the pipelines to execute the code. 
