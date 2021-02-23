@@ -8,9 +8,9 @@ categories: [HTML,DevOps]
 tags: [AWS, CodePipeline, multi region, cross account]
 icon: icon-html
 ---
+<p>&nbsp;</p>
 
 ## Why do we need this.
-
 
 
 There are many more use-cases where multi-account and cross-region CloudFormation stacks can be useful.
@@ -21,12 +21,10 @@ _AWS CodePipeline is a fully managed continuous delivery service that helps you 
 
 So the first thing is S3 Bucket on each region that we desire to deploy. After the buckets are created in their respective region, I decided to use SSM Parameters to provide the Pipeline with the buckets.
 Pipeline needs 1 bucket per target region. After this we can start with the pipeline itself.
-
+<p>&nbsp;</p>
 
 
 ## CodeBuild
-
-
 
 _AWS CodeBuild is a fully managed build service in the cloud. CodeBuild compiles your source code, runs unit tests, and produces artifacts that are ready to deploy._
 
@@ -59,11 +57,10 @@ The main command and stuff is happening in the build configuration section in th
         - template-export-region2.yml
 
 As you can see there is a different template export for each region and for each region there is a separate S3 bucket to store it, this can be put as one template but if you have different templates you can play it like this. 
-
+<p>&nbsp;</p>
 
 
 ## CloudFormation
-
 
 Back to the cloudformation template
 From the resource perspective we will start with defining the CodeBuild service
@@ -109,11 +106,10 @@ From the resource perspective we will start with defining the CodeBuild service
             Type: LOCAL
             Modes:
               - LOCAL_CUSTOM_CACHE
-
+<p>&nbsp;</p>
 
 
 ###CodePipeline
-
 
 Then we starting with the pipeline service or CodePipeline
 
@@ -142,10 +138,11 @@ Then we starting with the pipeline service or CodePipeline
                   OutputArtifacts:
                     - Name: SourceArtifact
                   RunOrder: 1
-
+<p>&nbsp;</p>
 As a first action in this stage we defined the source, GitHub. There can be different ways to defined, this is one template.
 Note here that we defined the output artifact that later we going to reference to. 
 The second action is the build.
+<p>&nbsp;</p>
 
           Name: Build
           Actions:
@@ -164,8 +161,10 @@ The second action is the build.
             OutputArtifacts:
               - Name: BuildOutput
 
+<p>&nbsp;</p>
 The main stuff here to point are InputArtifacts and OutputArtifacts. As input, we have the source from the previous action "SourceArtifiact" and as output we have already build stuff named as "BuildOutput".
 Step three, we have the deployment processes.
+<p>&nbsp;</p>
 
     - Name: Deploy
         Actions:
@@ -210,9 +209,10 @@ Step three, we have the deployment processes.
             # *** using the file generated in the build step
             TemplatePath: BuildOutput::template-export-region2.yml
           RunOrder: 1
-
+<p>&nbsp;</p>
 Note here that you can add another step before deployment, Create Change Set. This is very useful for testing it and to see what kind of changes are going to be deployed. You can put approval action too.
 As InputArtifacts we have the BuildOutput from the Build Action provided. Two main variables in this section is the "Region: region" and "RunOrder" (A positive integer that indicates the run order within the stage.)
+<p>&nbsp;</p>
 
       ArtifactStores: 
         -
@@ -231,6 +231,7 @@ As InputArtifacts we have the BuildOutput from the Build Action provided. Two ma
             EncryptionKey:
               Id: !Ref KMSKEYregion2
               Type: KMS
+<p>&nbsp;</p>
 
 At the end we end up with defining the artifact or the artifact store for each region (with their corresponding kms keys).
 This should be the end results image of the pipeline
