@@ -10,7 +10,7 @@ icon: icon-html
 ---
 <p>&nbsp;</p>
 
-## Why do we need this.
+### Why do we need this?
 
 
 There are many more use-cases where multi-account and cross-region CloudFormation stacks can be useful.
@@ -24,7 +24,7 @@ Pipeline needs 1 bucket per target region. After this we can start with the pipe
 <p>&nbsp;</p>
 
 
-## CodeBuild
+### CodeBuild
 
 _AWS CodeBuild is a fully managed build service in the cloud. CodeBuild compiles your source code, runs unit tests, and produces artifacts that are ready to deploy._
 
@@ -60,7 +60,7 @@ As you can see there is a different template export for each region and for each
 <p>&nbsp;</p>
 
 
-## CloudFormation
+### CloudFormation
 
 Back to the cloudformation template
 From the resource perspective we will start with defining the CodeBuild service
@@ -109,7 +109,7 @@ From the resource perspective we will start with defining the CodeBuild service
 <p>&nbsp;</p>
 
 
-###CodePipeline
+### CodePipeline
 
 Then we starting with the pipeline service or CodePipeline
 
