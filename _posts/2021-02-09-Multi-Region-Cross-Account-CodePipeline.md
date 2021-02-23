@@ -291,3 +291,5 @@ Note: There should be IAM Roles and Assume Role for the AWS Account (Tools) to h
 
 Source:
 [Cross Region deployments with AWS CodePipeline](https://blog.deleu.dev/cross-region-deployments-with-aws-codepipeline/)
+
+Thanks to [@mikebroberts](https://twitter.com/mikebroberts) for some tips and the [story](https://github.com/symphoniacloud/multi-region-codepipeline)
