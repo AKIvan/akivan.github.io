@@ -4,7 +4,7 @@ title:  "AWS CodePipeline Multi Account Cross Region"
 date:   2021-02-09
 desc: "Multi Account Cross Region CodePipeline"
 keywords: "AWS, CodePipeline, multi region, cross accounts"
-categories: [HTML,DevOps]
+categories: [HTML,Devops]
 tags: [AWS, CodePipeline, multi region, cross account]
 icon: icon-html
 ---
@@ -162,6 +162,26 @@ Step three, we have the deployment processes.
 
     - Name: Deploy
         Actions:
+
+            - Name: CreateChangeSet-region1
+              Region: region1
+              ActionTypeId:
+                Category: Deploy
+                Owner: AWS
+                Version: 1
+                Provider: CloudFormation
+              InputArtifacts:
+                - Name: BuildOutput
+              Configuration:
+                ChangeSetName: project-name-stack
+                ActionMode: CHANGE_SET_REPLACE
+                StackName: !Sub '${ProjectName}-stack'
+                Capabilities: CAPABILITY_NAMED_IAM,CAPABILITY_AUTO_EXPAND
+                TemplatePath: BuildOutput::template-export-region1.yml
+                RoleArn: !Ref DeployRole
+              RunOrder: 1
+              RoleArn: !Ref PipelineRole
+
         # *** Duplicate / edit / delete these stacks as necessary for your desired regions ***
           # *** Change this name to match desired region
         - Name: DeployToRegion1
@@ -182,8 +202,28 @@ Step three, we have the deployment processes.
             # *** Change this to match the region of this stack, 
             # *** using the file generated in the build step
             TemplatePath: BuildOutput::template-export-region1.yml
-          RunOrder: 1
+          RunOrder: 2
           # *** Change this name to match desired region
+
+            - Name: CreateChangeSet-region2
+              Region: region2
+              ActionTypeId:
+                Category: Deploy
+                Owner: AWS
+                Version: 1
+                Provider: CloudFormation
+              InputArtifacts:
+                - Name: BuildOutput
+              Configuration:
+                ChangeSetName: project-name-stack
+                ActionMode: CHANGE_SET_REPLACE
+                StackName: !Sub '${ProjectName}-stack'
+                Capabilities: CAPABILITY_NAMED_IAM,CAPABILITY_AUTO_EXPAND
+                TemplatePath: BuildOutput::template-export-region2.yml
+                RoleArn: !Ref DeployRole
+              RunOrder: 1
+              RoleArn: !Ref PipelineRole
+
         - Name: DeployToRegion2
           # *** Change this for desired region
           Region: region2
@@ -202,10 +242,11 @@ Step three, we have the deployment processes.
             # *** Change this to match the region of this stack, 
             # *** using the file generated in the build step
             TemplatePath: BuildOutput::template-export-region2.yml
-          RunOrder: 1
+          RunOrder: 2
 <p>&nbsp;</p>
-Note here that you can add another step before deployment, Create Change Set. This is very useful for testing it and to see what kind of changes are going to be deployed. You can put approval action too.
+So as first Action here is creating changeset. This is very useful for testing it and to see what kind of changes are going to be deployed. You can put approval action too.
 As InputArtifacts we have the BuildOutput from the Build Action provided. Two main variables in this section is the "Region: region" and "RunOrder" (A positive integer that indicates the run order within the stage.)
+Also the TemplatePath is the template that was defined in the buildspec file. This can be the same template or different one depending of what you are trying to do.  
 <p>&nbsp;</p>
 
       ArtifactStores: 
