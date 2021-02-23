@@ -4,10 +4,13 @@ title:  "AWS CodePipeline Multi Account Cross Region"
 date:   2021-02-09
 desc: "Multi Account Cross Region CodePipeline"
 keywords: "AWS, CodePipeline, multi region, cross accounts"
-categories: [HTML,Devops]
+categories: [HTML,DevOps]
 tags: [AWS, CodePipeline, multi region, cross account]
 icon: icon-html
 ---
+<center>
+<img src="/static/assets/img/blog/awspipeline/deploy.png"  />
+</center>
 <p>&nbsp;</p>
 
 ### Why do we need this?
@@ -284,3 +287,7 @@ This should be the end results image of the pipeline
 
 
 Note: There should be IAM Roles and Assume Role for the AWS Account (Tools) to have access to other environments and Roles for the pipelines to execute the code. 
+
+
+Source:
+[Cross Region deployments with AWS CodePipeline](https://blog.deleu.dev/cross-region-deployments-with-aws-codepipeline/)
