@@ -62,8 +62,8 @@ As you can see there is a different template export for each region and for each
 
 ### CloudFormation
 
-Back to the cloudformation template
-From the resource perspective we will start with defining the CodeBuild service
+Back to the cloudformation template.
+From the resource perspective we will start with defining the CodeBuild service. Note here that we are using this build for out template and as mention above, we need to create environment variables for each region/S3 bucket where we going to deploy it.
 
     BuildProject:
         Type: AWS::CodeBuild::Project
@@ -76,7 +76,6 @@ From the resource perspective we will start with defining the CodeBuild service
             ComputeType: BUILD_GENERAL1_SMALL
             Image: aws/codebuild/amazonlinux2-x86_64-standard:3.0
             EnvironmentVariables:
-              
               - Name: S3_BUCKET_region1
                 Value: !Ref S3BUCKETregion1
               - Name: KMSKey_region1
@@ -91,9 +90,6 @@ From the resource perspective we will start with defining the CodeBuild service
                 Value: !Sub ${AWS::AccountId}
               - Name: AWSREGION
                 Value: !Sub ${AWS::Region}
-              - Name: PARTITION
-                Value: aws
-
           Source:
             Type: CODEPIPELINE
           TimeoutInMinutes: 10
@@ -132,9 +128,7 @@ Then we starting with the pipeline service or CodePipeline
                     Repo: !Sub ${ProjectName}
                     PollForSourceChanges: false
                     Branch: !Ref Branch
-                    
                     OAuthToken: "{{resolve:secretsmanager:GitHubOAuthToken:SecretString:GitHubOAuthToken}}"
-                    
                   OutputArtifacts:
                     - Name: SourceArtifact
                   RunOrder: 1
