@@ -4,7 +4,7 @@ title:  "Steps to create Kubernetes Cluster Federation"
 date:   2019-10-31
 desc: "Steps to create Kubernetes Cluster Federation"
 keywords: "Kubernetes, Federation, Kubernetes Cluster Federation, AWS"
-categories: [devops]
+categories: [DevOps]
 tags: [Kubernetes,Kubernetes Cluster Federation]
 icon: icon-html
 ---
