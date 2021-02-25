@@ -4,7 +4,7 @@ title:  "GitHub Profile Page"
 date:   2020-08-30
 desc: "Customizing your GitHub Profile page"
 keywords: "GitHub, Profile, Page"
-categories: [DevOps]
+categories: [devops]
 tags: [GitHub, Profile, page, profile page]
 icon: icon-html
 ---

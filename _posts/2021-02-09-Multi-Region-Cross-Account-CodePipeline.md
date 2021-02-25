@@ -4,7 +4,7 @@ title:  "AWS CodePipeline Multi Account Cross Region"
 date:   2021-02-09
 desc: "Multi Account Cross Region CodePipeline"
 keywords: "AWS, CodePipeline, multi region, cross accounts"
-categories: [DevOps]
+categories: [devops]
 tags: [AWS, CodePipeline, multi region, cross account]
 icon: icon-html
 ---
