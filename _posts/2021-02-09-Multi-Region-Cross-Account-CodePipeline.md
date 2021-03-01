@@ -16,14 +16,14 @@ icon: icon-html
 ### Why do we need this?
 
 
-There are many more use-cases where multi-account and cross-region CloudFormation stacks can be useful.
+There are many use-cases where multi-account and cross-region CloudFormation stacks can be useful.
 It happens a lot when you have one pipeline but the same deployment need to be done on different region, and also to cover the concept of test and production.
 This is some main steps that can help you start from some Account like (Tools) and deployment goes to Test and Production Account but on two regions or at least can help you to build similar one. 
 
 _AWS CodePipeline is a fully managed continuous delivery service that helps you automate your release pipelines for fast and reliable application and infrastructure updates. CodePipeline automates the build, test, and deploy phases of your release process every time there is a code change, based on the release model you define. This enables you to rapidly and reliably deliver features and updates._
 
 So the first thing is S3 Bucket on each region that we desire to deploy. After the buckets are created in their respective region, I decided to use SSM Parameters to provide the Pipeline with the buckets.
-Pipeline needs 1 bucket per target region. After this we can start with the pipeline itself.
+Pipeline needs 1 bucket per target region.
 <p>&nbsp;</p>
 
 
@@ -34,7 +34,8 @@ _AWS CodeBuild is a fully managed build service in the cloud. CodeBuild compiles
 The most relevant attributes here are the environment variables containing each region bucket and the buildSpec path which should be placed inside the source code that the Pipeline will fetch from GitHub template and have it as ready to deploy part. 
 Prepare your environments to have S3 bucket to store the templates or source of the builds there. And if you are using encryption for it, that means you should crate KMS Keys for each region too.
 
-The buildspec.yaml is responsible for building the template and put it in S3 bucket so later one we can use those templates and create the CloudFormation Stacks. 
+
+In this step, you create a build specification (build spec) file. A buildspec is a collection of build commands and related settings, in YAML format, that CodeBuild uses to run a build. Without a build spec, CodeBuild cannot successfully convert your build input into build output or locate the build output artifact in the build environment to upload to your output bucket.
 The main command and stuff is happening in the build configuration section in this file.
 
     version: 0.2
@@ -59,7 +60,7 @@ The main command and stuff is happening in the build configuration section in th
         - template-export-region1.yml
         - template-export-region2.yml
 
-As you can see there is a different template export for each region and for each region there is a separate S3 bucket to store it, this can be put as one template but if you have different templates you can play it like this. 
+As you can see, it's a different template export for each region and for each region there is a separate S3 bucket to store it, this can be put as one template but if you have different templates you can play it like this. 
 <p>&nbsp;</p>
 
 
