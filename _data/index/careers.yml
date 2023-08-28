@@ -10,7 +10,7 @@
     detail: Nov. 2019
     i18n: company_a_date
   job:
-    detail: COO and CTO -
+    detail: Owner, Python, AI, Django, TensorFlow
     i18n: company_a_job
   icon: fa-plus-square
 
@@ -24,7 +24,7 @@
     detail: Nov. 2022
     i18n: company_a_date
   job:
-    detail: Python, AI, Django, TensorFlow
+    detail: COO, CTO and Mentor
     i18n: company_a_job
   icon: fa-plus-square
 
