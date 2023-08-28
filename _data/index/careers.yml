@@ -10,7 +10,7 @@
     detail: Nov. 2019
     i18n: company_a_date
   job:
-    detail: COO, CTO
+    detail: COO and CTO -
     i18n: company_a_job
   icon: fa-plus-square
 
@@ -18,7 +18,7 @@
     detail: KubeLab
     i18n: company_a
   desc:
-    detail: COO and CTO of the Company
+    detail: Worked as Mentor and COO and acting CTO - guiding company growth through strategic leadership and technological innovation while also mentoring our team and overseeing daily operations.
     i18n: company_a_desc
   date:
     detail: Nov. 2022
@@ -32,7 +32,7 @@
     detail: ENDAVA
     i18n: company_a
   desc:
-    detail: I'm working at ENDAVA as Python DevOps and AI Engineer.
+    detail: Worked at ENDAVA as Python DevOps and AI Consultant. Mentor for new trainees
     i18n: company_a_desc
   date:
     detail: Nov. 2021
@@ -42,12 +42,11 @@
     i18n: company_a_job
   icon: fa-plus-square
 
-
 - name:
     detail: Symphony-Solutions
     i18n: company_a
   desc:
-    detail: I worked at Symphony-Solutions as Python DevOps Developer.
+    detail: Worked at Symphony-Solutions as Python DevOps Developer and ML for Hewlett Packard (HP) and Graphyte. Mentor for new trainees
     i18n: company_a_desc
   date:
     detail: Nov. 2017
@@ -61,7 +60,7 @@
     detail: Armedia
     i18n: company_b
   desc:
-    detail: I worked at Armedia as DevOps
+    detail: Worked at Armedia as Lead DevOps Engineer
     i18n: company_b_desc
   date:
     detail: Apr. 2016
@@ -75,7 +74,7 @@
     detail: EcoNet
     i18n: company_b
   desc:
-    detail: I worked at EcoNet as Python Developer. Application for Drung industry, using AI and ML, Cassandra and Elasticsearch. 
+    detail: Worked at EcoNet as Python Developer. Application for Drung industry, using AI and ML.
     i18n: company_b_desc
   date:
     detail: Oct. 2018
@@ -89,7 +88,7 @@
     detail: Radix-Technologies
     i18n: company_b
   desc:
-    detail: I worked at Radix-Technologies as Cloud Architect. Designing maintaining Clouds/Grids (OpenStack, CA Applogic, Vmware, Hyper-V). 
+    detail: Worked at Radix-Technologies as Cloud Architect. Designing maintaining Clouds (OpenStack, CA Applogic, Vmware, Hyper-V).
     i18n: company_b_desc
   date:
     detail: Oct. 2012
@@ -117,7 +116,7 @@
     detail: Makpetrol A.D. - Skopje
     i18n: company_b
   desc:
-    detail: I worked as System and Network Administrator. Implementing ISO 27001, Managing whole infrastructure and monitoring the same.
+    detail: Worked as System and Network Administrator. Implementing ISO 27001, Managing whole infrastructure and monitoring the same.
     i18n: company_b_desc
   date:
     detail: Oct. 2010
