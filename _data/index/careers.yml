@@ -10,6 +10,20 @@
     detail: Nov. 2019
     i18n: company_a_date
   job:
+    detail: COO, CTO
+    i18n: company_a_job
+  icon: fa-plus-square
+
+- name:
+    detail: KubeLab
+    i18n: company_a
+  desc:
+    detail: COO and CTO of the Company
+    i18n: company_a_desc
+  date:
+    detail: Nov. 2022
+    i18n: company_a_date
+  job:
     detail: Python, AI, Django, TensorFlow
     i18n: company_a_job
   icon: fa-plus-square
