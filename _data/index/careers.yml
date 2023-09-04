@@ -4,13 +4,13 @@
     detail: PositivePy
     i18n: company_a
   desc:
-    detail: CEO of PositivePy
+    detail: Owner and CEO of PositivePy
     i18n: company_a_desc
   date:
     detail: Nov. 2019
     i18n: company_a_date
   job:
-    detail: CEO
+    detail: Owner
     i18n: company_a_job
   icon: fa-plus-square
 
